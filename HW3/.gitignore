@@ -1,0 +1,10 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+*.key
+*.pem
+*service-account*.json
+application_default_credentials.json
