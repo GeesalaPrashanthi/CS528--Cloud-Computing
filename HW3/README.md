@@ -16,20 +16,6 @@ This repository contains the two Python services created for CS528 Homework 3.
   - Prints forbidden-request events to standard output.
   - Appends events to `gs://cs528-hw2-pgeesala/forbidden_requests/forbidden_requests.log`.
 
-## Repository Structure
-
-```text
-CS528-HW3/
-├── service1/
-│   ├── main.py
-│   └── requirements.txt
-├── service2/
-│   ├── subscriber.py
-│   └── requirements.txt
-├── README.md
-└── .gitignore
-```
-
 ## Google Cloud Resources
 
 - Project: `enduring-trees-508117-p7`
@@ -177,5 +163,4 @@ The macOS client was run with:
 ## Notes
 
 - Homework 2 HTML files are stored under `pages/` in the Cloud Storage bucket.
-- Do not commit virtual environments, Google Cloud credential files, service-account keys, or Python cache files.
 - Error requests are recorded using both print statements and structured logging.
