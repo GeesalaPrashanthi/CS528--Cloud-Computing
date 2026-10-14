@@ -1,4 +1,4 @@
-# CS528 Homework 4 — VM-based HTTP Services
+# CS528 Homework 4: VM-based HTTP Services
 
 This folder contains the VM-based version of the HTTP file service and forbidden-country reporter from HW3. The web server uses Python's standard-library `http.server` (not Flask).
 
