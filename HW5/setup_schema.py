@@ -33,7 +33,7 @@ try:
             country VARCHAR(100),
             client_ip VARCHAR(45),
             gender VARCHAR(30),
-            age INT,
+            age VARCHAR(20),
             income VARCHAR(100),
             is_banned BOOLEAN NOT NULL DEFAULT FALSE,
             time_of_day VARCHAR(50),

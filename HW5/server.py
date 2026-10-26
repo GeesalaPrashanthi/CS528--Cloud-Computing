@@ -97,11 +97,7 @@ class RequestHandler(BaseHTTPRequestHandler):
                     return value.strip()
             return None
         country = header('X-Country', 'Country')
-        age_raw = header('X-Age', 'Age')
-        try:
-            age = int(age_raw) if age_raw else None
-        except ValueError:
-            age = None
+        age = header('X-Age', 'Age')
         metadata = {'country': country, 'client_ip': header('X-Forwarded-For') or self.client_address[0],
                     'gender': header('X-Gender', 'Gender'), 'age': age,
                     'income': header('X-Income', 'Income'),
