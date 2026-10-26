@@ -76,7 +76,7 @@ if ! gcloud auth application-default print-access-token >/dev/null 2>&1; then
 fi
 LOCAL_VENV="${TMPDIR:-/tmp}/cs528-hw5-schema-venv"
 python3 -m venv "$LOCAL_VENV"
-"$LOCAL_VENV/bin/python" -m pip -q install pymysql
+"$LOCAL_VENV/bin/python" -m pip -q install pymysql cryptography
 cloud-sql-proxy --port 3307 "${PROJECT_ID}:${REGION}:${SQL_INSTANCE}" >/tmp/hw5-proxy.log 2>&1 &
 PROXY_PID=$!
 trap 'kill "$PROXY_PID" 2>/dev/null || true' EXIT
