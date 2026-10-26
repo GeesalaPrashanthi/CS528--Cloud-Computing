@@ -23,7 +23,7 @@ DEBIAN_FRONTEND=noninteractive apt-get install -y git curl ca-certificates pytho
 mkdir -p "$APP_DIR"
 # The HW5 directory MUST be committed and pushed before provisioning the VM.
 git clone --depth 1 "$REPO_URL" /tmp/hw5-source
-cp /tmp/hw5-source/hw5/server.py /tmp/hw5-source/hw5/reporter.py /tmp/hw5-source/hw5/requirements.txt "$APP_DIR/"
+cp /tmp/hw5-source/HW5/server.py /tmp/hw5-source/HW5/reporter.py /tmp/hw5-source/HW5/requirements.txt "$APP_DIR/"
 python3 -m venv "$APP_DIR/venv"
 "$APP_DIR/venv/bin/pip" install --no-cache-dir -r "$APP_DIR/requirements.txt" google-cloud-secret-manager
 
