@@ -1,0 +1,8 @@
+{
+  "file": "data/requests.csv",
+  "rows": 100000,
+  "sha256": "309ac49a84429ef482e441073519fdf34bc9779088bdc13994e1033ed072861a",
+  "database": "cs528_hw6",
+  "view": "request_details",
+  "geography_seed": 42
+}

@@ -1,0 +1,7 @@
+# Versions verified on the existing HW6 VM (2026-11-02).
+pandas==3.1.0
+scikit-learn==1.9.1
+PyMySQL==1.2.3
+google-cloud-storage==3.17.1
+
+cloud-sql-python-connector[pymysql]==1.23.0
